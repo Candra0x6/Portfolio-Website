@@ -10,7 +10,6 @@ import iconModel8 from "../../assets/icon/icon8.svg";
 import iconModel9 from "../../assets/icon/icon9.svg";
 import reactJSIcon from "../../assets/icon/reactJsIcon.svg";
 import tailwindCSSIcon from "../../assets/icon/tailwindCssIcon.svg";
-import firebaseIcon from "../../assets/icon/firebaseIcon.svg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import projectImage from "../../assets/image/projectImage1.svg";
 import LinkIcon from "@mui/icons-material/Link";
