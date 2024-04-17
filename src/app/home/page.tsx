@@ -95,11 +95,11 @@ function Home() {
                 stiffness: 50,
               },
             }}
-            className="absolute w-full xl:-mb-32 lg:-mb-24 md:-mb-[68px] -mb-10 flex flex-row justify-center z-10 bottom-0"
+            className="absolute w-full xl:-mb-32 lg:-mb-24 md:-mb-[65px]  -mb-10 flex flex-row justify-center z-10 bottom-0"
           >
-            <h1 className="font-bayon bg-gradient-to-t xl:text-[100px] text-[8vw] from-[#000000] via-[#292929] to-[#ffffff] text-transparent opacity-20 bg-clip-text">
+            <h1 className="font-bayon bg-gradient-to-t xl:text-[100px] md:text-[60px] text-[7vw] from-[#000000] via-[#292929] to-[#ffffff] text-transparent opacity-20 bg-clip-text">
               KURNIAWAN{" "}
-              <span className="bg-gradient-to-t xl:text-[100px] text-[8vw] from-[#2d2d2d] via-[#ffffff] to-[#2d2d2d] text-transparent opacity-50 bg-clip-text">
+              <span className="bg-gradient-to-t xl:text-[100px] md:text-[60px] text-[7vw] from-[#2d2d2d] via-[#ffffff] to-[#2d2d2d] text-transparent opacity-50 bg-clip-text">
                 CANDRA{" "}
               </span>
               MAHARDIKA
@@ -598,7 +598,7 @@ function Home() {
           </div>
           {/* Line */}
           <motion.div
-            initial={{ opacity: 0, scaleX: 0.5 }}
+            initial={{ opacity: 0, scaleX: 0 }}
             whileInView={{ opacity: 1, scaleX: 1 }}
             transition={{
               duration: 1,
@@ -618,9 +618,9 @@ function Home() {
                 whileInView={{ opacity: 1, translateY: 0 }}
                 transition={{
                   duration: 3,
-                  delay: 1.5,
+                  delay: 2,
                   translateY: {
-                    delay: 1.5,
+                    delay: 2,
                     type: "spring",
                     duration: 1,
                     stiffness: 50,
@@ -638,9 +638,9 @@ function Home() {
                 whileInView={{ opacity: 1, translateY: 0 }}
                 transition={{
                   duration: 3,
-                  delay: 1.5,
+                  delay: 2,
                   translateY: {
-                    delay: 1.5,
+                    delay: 2,
                     type: "spring",
                     duration: 1,
                     stiffness: 50,
@@ -660,9 +660,9 @@ function Home() {
                 whileInView={{ opacity: 1, translateY: 0 }}
                 transition={{
                   duration: 3,
-                  delay: 1.5,
+                  delay: 2,
                   translateY: {
-                    delay: 1.5,
+                    delay: 2,
                     type: "spring",
                     duration: 1,
                     stiffness: 50,
@@ -682,9 +682,9 @@ function Home() {
                 whileInView={{ opacity: 1, translateY: 0 }}
                 transition={{
                   duration: 3,
-                  delay: 1.5,
+                  delay: 2,
                   translateY: {
-                    delay: 1.5,
+                    delay: 2,
                     type: "spring",
                     duration: 1,
                     stiffness: 50,
@@ -733,7 +733,7 @@ function Home() {
                     stiffness: 50,
                   },
                 }}
-                className="font-robotolight xl:text-md lg:text-[17px]  md:text-[14px]"
+                className="font-robotolight xl:text-md lg:text-[17px] md:text-[14px]"
               >
                 IT CLUB SMK NEGERI 1 GUNUNGPUTRI
               </motion.h1>
@@ -818,13 +818,13 @@ function Home() {
                 href="https://github.com/Candra0x6/MovieSAIL-React"
                 className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center"
               >
-                <GitHubIcon className="" sx={{ fontSize: 50 }} />
+                <GitHubIcon className="md:p-0 p-3" sx={{ fontSize: 50 }} />
               </a>
               <a
                 href="https://moviesail.vercel.app/"
                 className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center"
               >
-                <LinkIcon sx={{ fontSize: 50 }} />
+                <LinkIcon sx={{ fontSize: 50 }} className="md:p-0 p-3" />
               </a>
             </div>
           </div>{" "}

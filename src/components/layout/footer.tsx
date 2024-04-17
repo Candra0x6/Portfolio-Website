@@ -7,12 +7,17 @@ function Footer() {
   return (
     <>
       <motion.img
-        initial={{ translateY: -200, rotate: "180deg", scaleY: 0.5 }}
-        whileInView={{ translateY: 0, rotate: "180deg", scaleY: 1 }}
+        initial={{
+          opacity: 0.5,
+          translateY: -100,
+          rotate: "180deg",
+          scaleY: 0.5,
+        }}
+        whileInView={{ opacity: 1, translateY: 0, rotate: "180deg", scaleY: 1 }}
         transition={{
-          duration: 1,
+          duration: 0.4,
           ease: "easeIn",
-          scaleY: {
+          translateY: {
             duration: 1,
             stiffness: 50,
           },
