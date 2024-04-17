@@ -2,10 +2,24 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Wave from "../../assets/image/wave.svg";
+import { motion } from "framer-motion";
 function Footer() {
   return (
     <>
-      <img src={Wave} className="rotate-180 content-stretch w-full -mt-2" />
+      <motion.img
+        initial={{ translateY: -200, rotate: "180deg", scaleY: 0.5 }}
+        whileInView={{ translateY: 0, rotate: "180deg", scaleY: 1 }}
+        transition={{
+          duration: 1,
+          ease: "easeIn",
+          scaleY: {
+            duration: 1,
+            stiffness: 50,
+          },
+        }}
+        src={Wave}
+        className="rotate-180 content-stretch w-full -mt-2"
+      />
       <div className="flex bg-white lg:-mt-20 lg:px-0 px-2 ">
         <div className="container flex flex-row justify-between mx-auto ">
           <div className="">
