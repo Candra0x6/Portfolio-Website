@@ -701,7 +701,7 @@ function Home() {
           </motion.div>
           {/* Content */}
           <div className="flex flex-row justify-between">
-            <div className=" xl:w-[350px] lg:w-[345px] w-[17vw] md:w-[240px]  md:text-[14px] text-white xl:text-base text-[3vw] ">
+            <div className=" xl:w-[350px] lg:w-[345px] w-[30vw] md:w-[240px]  md:text-[14px] text-white xl:text-base text-[3vw] ">
               <motion.h1
                 initial={{ opacity: 0, translateY: 50 }}
                 whileInView={{ opacity: 1, translateY: 0 }}
