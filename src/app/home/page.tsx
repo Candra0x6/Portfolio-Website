@@ -13,6 +13,8 @@ import tailwindCSSIcon from "../../assets/icon/tailwindCssIcon.svg";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import projectImage from "../../assets/image/projectImage1.svg";
 import LinkIcon from "@mui/icons-material/Link";
+import mobileAppProject from "../../assets/image/MobileAppMockupDesign.svg";
+import firebaseIcon from "../../assets/icon/firebaseIcon.svg";
 import { motion } from "framer-motion";
 function Home() {
   return (
@@ -830,6 +832,63 @@ function Home() {
           </div>{" "}
           <div className="lg:my-auto -mt-10 md:my-auto">
             <img src={projectImage} alt="project" className="" />
+          </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, translateX: 50 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{
+            duration: 1,
+            translateY: {
+              type: "spring",
+              duration: 1,
+              stiffness: 50,
+            },
+          }}
+          className="relative lg:grid-cols-2 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-2 grid gap-x-2 mx-auto lg:w-[1000px] lg:h-[600px] md:w-[700px] md:h-[500px]  bg-gradient-to-bl from-[#242424b5] to-[#ffffff0d] bg-opacity- rounded-xl"
+        >
+          {/* Project Content */}
+          <div className="flex flex-col h-full  justify-center xl:ml-[60px] ml-5 xl:text-base text-[4vw] lg:ml-10 ">
+            <div className="flex flex-col w-full ">
+              <h1 className="text-red-600 text-xs mb-10">*In Development !!</h1>
+              <motion.h1 className="font-bayon text-white xl:text-[60px] text-[8vw] lg:text-[70px]  md:text-[50px]">
+                LUX<span className="text-emerald-300">URIA</span>
+              </motion.h1>
+              <p className="font-robotolight text-white lg:text-[17px]  md:text-[14px] xl:mt-7 ">
+                Luxuria is a groundbreaking mobile e-commerce application that
+                is transforming the way people shop for high-end furniture.
+                Developed with the modern, on-the-go consumer in mind, Luxuria
+                harnesses the power of cutting-edge technology to deliver a
+                truly immersive and personalized furniture shopping experience.
+              </p>
+            </div>
+            <div className="flex flex-row mt-5 space-x-5">
+              <img width="48" height="48" src={reactJSIcon} alt="REACT JS" />
+              <img
+                width="48"
+                height="48"
+                src={tailwindCSSIcon}
+                alt="Tailwind"
+              />
+              <img width="48" height="48" src={firebaseIcon} alt="Firebase" />
+            </div>
+            <div className="absolute bottom-0 lg:mb-10 mb-5 flex flex-row space-x-5">
+              <a
+                href="https://github.com/Candra0x6/Luxuria-Furnishings"
+                className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center"
+              >
+                <GitHubIcon className="md:p-0 p-3" sx={{ fontSize: 50 }} />
+              </a>
+              <a
+                href=""
+                className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center"
+              >
+                <LinkIcon sx={{ fontSize: 50 }} className="md:p-0 p-3" />
+              </a>
+            </div>
+          </div>{" "}
+          <div className="lg:my-auto -mt-10 md:my-auto">
+            <img src={mobileAppProject} alt="project" className="" />
           </div>
         </motion.div>
       </div>
