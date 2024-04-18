@@ -15,6 +15,7 @@ import projectImage from "../../assets/image/projectImage1.svg";
 import LinkIcon from "@mui/icons-material/Link";
 import mobileAppProject from "../../assets/image/MobileAppMockupDesign.svg";
 import firebaseIcon from "../../assets/icon/firebaseIcon.svg";
+import nativewindIcon from "../../assets/icon/nativewind.png";
 import { motion } from "framer-motion";
 function Home() {
   return (
@@ -864,12 +865,7 @@ function Home() {
             </div>
             <div className="flex flex-row mt-5 space-x-5">
               <img width="48" height="48" src={reactJSIcon} alt="REACT JS" />
-              <img
-                width="48"
-                height="48"
-                src={tailwindCSSIcon}
-                alt="Tailwind"
-              />
+              <img width="48" height="48" src={nativewindIcon} alt="Tailwind" />
               <img width="48" height="48" src={firebaseIcon} alt="Firebase" />
             </div>
             <div className="absolute bottom-0 lg:mb-10 mb-5 flex flex-row space-x-5">
