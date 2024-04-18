@@ -40,9 +40,15 @@ function Footer() {
               Connect
             </h1>
             <div className="flex text-black lg:space-x-5 space-x-2 ">
-              <EmailIcon />
-              <InstagramIcon />
-              <LinkedInIcon />
+              <a href="mailto:kurniawancandram@gmail.com">
+                <EmailIcon />
+              </a>
+              <a href="">
+                <LinkedInIcon />
+              </a>
+              <a href="http://">
+                <InstagramIcon />
+              </a>
             </div>
           </div>
         </div>
