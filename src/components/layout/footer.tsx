@@ -1,6 +1,4 @@
-import InstagramIcon from "@mui/icons-material/Instagram";
-import EmailIcon from "@mui/icons-material/Email";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 import Wave from "../../assets/image/wave.svg";
 import { motion } from "framer-motion";
 function Footer() {
@@ -35,22 +33,9 @@ function Footer() {
               Kurniawan Candra Mahardika
             </h1>
           </div>
-          <div className="">
-            <h1 className="text-right font-robotobold text-[5vw] lg:text-[30px]  md:text-[30px]">
-              Connect
-            </h1>
-            <div className="flex text-black lg:space-x-5 space-x-2 ">
-              <a href="mailto:kurniawancandram@gmail.com">
-                <EmailIcon />
-              </a>
-              <a href="">
-                <LinkedInIcon />
-              </a>
-              <a href="http://">
-                <InstagramIcon />
-              </a>
-            </div>
-          </div>
+         <div className="">
+           <h1 className="font-robotolight text-[2vw] font-semibold">CN</h1>
+         </div>
         </div>
       </div>
     </>

@@ -10,13 +10,18 @@ import iconModel8 from "../../assets/icon/icon8.svg";
 import iconModel9 from "../../assets/icon/icon9.svg";
 import reactJSIcon from "../../assets/icon/reactJsIcon.svg";
 import tailwindCSSIcon from "../../assets/icon/tailwindCssIcon.svg";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import projectImage from "../../assets/image/projectImage1.svg";
-import LinkIcon from "@mui/icons-material/Link";
+import MovieSail from "../../assets/image/moviesail.svg";
+import Livify from "../../assets/image/livify.svg";
 import mobileAppProject from "../../assets/image/MobileAppMockupDesign.svg";
 import firebaseIcon from "../../assets/icon/firebaseIcon.svg";
 import nativewindIcon from "../../assets/icon/nativewind.png";
 import { motion } from "framer-motion";
+import Budayantara from "../../assets/image/budayantara.svg";
+import ProjectCard from "../../components/card/ProjectCard";
+import NextJSIcon from "../../assets/icon/Next.js.svg";
+import SupabaseIcon from "../../assets/icon/supabase.svg";
+import ShadcnIcon from "../../assets/icon/shadcn.svg";
+import PrismaIcon from "../../assets/icon/prisma.svg";
 function Home() {
   return (
     <LandingPage>
@@ -25,8 +30,6 @@ function Home() {
         id="home"
         className="flex flex-col xl:h-[800px] min-h-screen justify-center"
       >
-        {/* Text */}
-
         <div className="flex flex-col items-center ">
           <div className="flex flex-row font-bayon 2xl:text-[195px] xl:text-[160px] lg:text-[130px] md:text-[12.5vw] text-[12vw] text-white justify-between w-full">
             <motion.h1
@@ -43,7 +46,7 @@ function Home() {
                 },
               }}
             >
-              FRONTEND
+              FULLSTACK
             </motion.h1>
             <motion.h1
               initial={{ opacity: 0, translateX: 500 }}
@@ -80,8 +83,8 @@ function Home() {
             }}
             className="font-sans text-[#968E8E] xl:text-xl lg:text-lg lg:w-[600px] xl:w-[660px] md:text-[2vw] md:w-[550px] text-[3vw] text-center -mt-5 mb-5"
           >
-            frontend developer with a passion for creating visually stunning and
-            highly interactive web applications.
+            fullstack developer with a passion for creating visually stunning
+            and highly interactive web applications.
           </motion.p>
         </div>
         {/* Image */}
@@ -296,7 +299,7 @@ function Home() {
               aspects of web development. The skills I've acquired in
               networking, programming, and computer hardware have equipped me
               with a unique perspective on building robust and efficient web
-              applications. What truly excites me about frontend development is
+              applications. What truly excites me about fullstack development is
               the constant opportunity to learn and grow, as the landscape is
               constantly evolving with new frameworks, libraries, and best
               practices.
@@ -336,7 +339,25 @@ function Home() {
                 }}
                 className="font-robotolight xl:text-base lg:text-[17px]  md:text-[14px] text-[3vw]"
               >
-                SMK NEGERI 2 SURAKARTA | 2021 - Present
+                SMK Negeri 2 Surakarta (Surakarta State Vocational High School)
+                | 2021 - 2024
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, translateY: 50 }}
+                whileInView={{ opacity: 1, translateY: 0 }}
+                transition={{
+                  duration: 1,
+                  delay: 0.5,
+                  translateY: {
+                    delay: 0.5,
+                    type: "spring",
+                    duration: 1,
+                    stiffness: 50,
+                  },
+                }}
+                className="font-robotolight xl:text-base lg:text-[17px]  md:text-[14px] text-[3vw]"
+              >
+                Muhammadiyah University of Surakarta (UMS) | 2024 - Present
               </motion.p>
             </div>
             <div className="">
@@ -372,8 +393,9 @@ function Home() {
                 }}
                 className="font-robotolight  xl:text-base lg:text-[17px]  md:text-[14px] text-[3vw]"
               >
-                HTML5, CSS, Javascript(ES6+), React JS, TypeScript, React
-                Native, Figma, Photoshop, Firebase, and Git/Github{" "}
+                HTML5, CSS, Javascript(ES6+), Next JS , React JS, TypeScript,
+                React Native, Figma, Photoshop, Firebase, Supabase, ORM Prisma,
+                and Git/Github
               </motion.p>
             </div>
             <div className="">
@@ -409,7 +431,8 @@ function Home() {
                 }}
                 className="font-robotolight  xl:text-base lg:text-[17px]  md:text-[14px] text-[3vw]"
               >
-                Tailwind CSS, CSS3/SCSS/SASS, Framer Motion and Chakra UI{" "}
+                CSS3/SCSS/SASS, Tailwind CSS, Framer Motion, Chakra UI and
+                Shadcn UI
               </motion.p>
             </div>
           </div>
@@ -781,112 +804,50 @@ function Home() {
         >
           PROJECTS
         </motion.h1>
-        <motion.div
-          initial={{ opacity: 0, translateX: 50 }}
-          whileInView={{ opacity: 1, translateX: 0 }}
-          transition={{
-            duration: 1,
-            translateY: {
-              type: "spring",
-              duration: 1,
-              stiffness: 50,
-            },
-          }}
-          className="relative lg:grid-cols-2 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-2 grid gap-x-2 mx-auto lg:w-[1000px] lg:h-[600px] md:w-[700px] md:h-[500px]  bg-gradient-to-bl from-[#242424b5] to-[#ffffff0d] bg-opacity- rounded-xl"
-        >
-          {/* Project Content */}
-          <div className="flex flex-col h-full  justify-center xl:ml-[60px] ml-5 xl:text-base text-[4vw] lg:ml-10 ">
-            <div className="flex flex-col w-full ">
-              <motion.h1 className="font-bayon text-white xl:text-[60px] text-[8vw] lg:text-[70px]  md:text-[50px]">
-                MOVIE <span className="text-red-300">SAIL</span>
-              </motion.h1>
-              <p className="font-robotolight text-white lg:text-[17px]  md:text-[14px] xl:mt-7 ">
-                Movie Sail is a cutting-edge movie discovery platform that
-                harnesses the power of the TMDB (The Movie Database) Developer
-                API to bring users a personalized and immersive movie-browsing
-                experience.
-              </p>
-            </div>
-            <div className="flex flex-row mt-5 space-x-5">
-              <img width="48" height="48" src={reactJSIcon} alt="REACT JS" />
-              <img
-                width="48"
-                height="48"
-                src={tailwindCSSIcon}
-                alt="REACT JS"
-              />
-            </div>
-            <div className="absolute bottom-0 lg:mb-10 mb-5 flex flex-row space-x-5">
-              <a
-                href="https://github.com/Candra0x6/MovieSAIL-React"
-                className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center"
-              >
-                <GitHubIcon className="md:p-0 p-3" sx={{ fontSize: 50 }} />
-              </a>
-              <a
-                href="https://moviesail.vercel.app/"
-                className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center"
-              >
-                <LinkIcon sx={{ fontSize: 50 }} className="md:p-0 p-3" />
-              </a>
-            </div>
-          </div>{" "}
-          <div className="lg:my-auto -mt-10 md:my-auto">
-            <img src={projectImage} alt="project" className="" />
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, translateX: 50 }}
-          whileInView={{ opacity: 1, translateX: 0 }}
-          transition={{
-            duration: 1,
-            translateY: {
-              type: "spring",
-              duration: 1,
-              stiffness: 50,
-            },
-          }}
-          className="relative lg:grid-cols-2 lg:grid-rows-1 md:grid-cols-2 md:grid-rows-1 grid-cols-1 grid-rows-2 grid gap-x-2 mx-auto lg:w-[1000px] lg:h-[600px] md:w-[700px] md:h-[500px]  bg-gradient-to-bl from-[#242424b5] to-[#ffffff0d] bg-opacity- rounded-xl"
-        >
-          {/* Project Content */}
-          <div className="flex flex-col h-full  justify-center xl:ml-[60px] ml-5 xl:text-base text-[4vw] lg:ml-10 ">
-            <div className="flex flex-col w-full ">
-              <h1 className="text-red-600 text-xs mb-10">*In Development !!</h1>
-              <motion.h1 className="font-bayon text-white xl:text-[60px] text-[8vw] lg:text-[70px]  md:text-[50px]">
-                LUX<span className="text-emerald-300">URIA</span>
-              </motion.h1>
-              <p className="font-robotolight text-white lg:text-[17px]  md:text-[14px] xl:mt-7 ">
-                Luxuria is a groundbreaking mobile e-commerce application that
+        <ProjectCard
+          title="MOVIE"
+          subtitle=" SAIL"
+          titleColor="#db094b"
+          description="Movie Sail is a cutting-edge movie discovery platform that harnesses the power of the TMDB (The Movie Database) Developer API to bring users a personalized and immersive movie-browsing experience."
+          githubLink="https://github.com/Candra0x6/MovieSAIL-React"
+          projectLink="https://moviesail.vercel.app/"
+          stack={[reactJSIcon, tailwindCSSIcon]}
+          image={MovieSail}
+        />
+        <ProjectCard
+          title="LUX"
+          subtitle="URIA"
+          titleColor="#65f78c"
+          description="Luxuria is a groundbreaking mobile e-commerce application that
                 is transforming the way people shop for high-end furniture.
                 Developed with the modern, on-the-go consumer in mind, Luxuria
                 harnesses the power of cutting-edge technology to deliver a
-                truly immersive and personalized furniture shopping experience.
-              </p>
-            </div>
-            <div className="flex flex-row mt-5 space-x-5">
-              <img width="48" height="48" src={reactJSIcon} alt="REACT JS" />
-              <img width="48" height="48" src={nativewindIcon} alt="Tailwind" />
-              <img width="48" height="48" src={firebaseIcon} alt="Firebase" />
-            </div>
-            <div className="absolute bottom-0 lg:mb-10 mb-5 flex flex-row space-x-5">
-              <a
-                href="https://github.com/Candra0x6/Luxuria-Furnishings"
-                className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center"
-              >
-                <GitHubIcon className="md:p-0 p-3" sx={{ fontSize: 50 }} />
-              </a>
-              <a
-                href=""
-                className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center"
-              >
-                <LinkIcon sx={{ fontSize: 50 }} className="md:p-0 p-3" />
-              </a>
-            </div>
-          </div>{" "}
-          <div className="lg:my-auto -mt-10 md:my-auto">
-            <img src={mobileAppProject} alt="project" className="" />
-          </div>
-        </motion.div>
+                truly immersive and personalized furniture shopping experience."
+          githubLink="https://github.com/Candra0x6/Luxuria-Furnishings"
+          image={mobileAppProject}
+          projectLink=""
+          stack={[reactJSIcon, nativewindIcon, firebaseIcon]}
+        />
+        <ProjectCard
+          title="BUDAY"
+          subtitle="ANTARA"
+          titleColor="#fcb447"
+          description="Budayantara is a comprehensive platform that provides information and resources about the diverse cultural elements of Indonesia. It serves as a digital hub for anyone interested in learning about the country's vibrant traditions and artistic expressions."
+          githubLink="https://github.com/Candra0x6/NIFC-Competition.git"
+          image={Budayantara}
+          projectLink="https://budayantara.vercel.app/"
+          stack={[reactJSIcon, tailwindCSSIcon]}
+        />
+        <ProjectCard
+          title="LIVI"
+          subtitle="FY"
+          titleColor="#171bff"
+          description="Livify is an open-source e-commerce platform specifically designed for furniture retailers. Built with modern web technologies, it offers a scalable, customizable, and user-friendly solution for businesses looking to establish or upgrade their online presence in the furniture market."
+          githubLink="https://github.com/Candra0x6/Livify.git"
+          image={Livify}
+          projectLink="https://livify.netlify.app/"
+          stack={[NextJSIcon, SupabaseIcon, PrismaIcon, ShadcnIcon]}
+        />
       </div>
     </LandingPage>
   );
