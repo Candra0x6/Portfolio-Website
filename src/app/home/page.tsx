@@ -46,7 +46,7 @@ function Home() {
                 },
               }}
             >
-              FULLSTACK
+              SOFTWARE
             </motion.h1>
             <motion.h1
               initial={{ opacity: 0, translateX: 500 }}
@@ -65,7 +65,7 @@ function Home() {
               }}
               className="flex flex-col text-[#7BA2DE]"
             >
-              DEVELOPER
+              ENGINEER
             </motion.h1>
           </div>
           <motion.p
@@ -83,8 +83,8 @@ function Home() {
             }}
             className="font-sans text-[#968E8E] xl:text-xl lg:text-lg lg:w-[600px] xl:w-[660px] md:text-[2vw] md:w-[550px] text-[3vw] text-center -mt-5 mb-5"
           >
-            fullstack developer with a passion for creating visually stunning
-            and highly interactive web applications.
+            software engineer with a passion for creating visually stunning and
+            highly interactive applications.
           </motion.p>
         </div>
         {/* Image */}
