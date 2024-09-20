@@ -31,7 +31,7 @@ function Home() {
         className="flex flex-col xl:h-[800px] min-h-screen justify-center"
       >
         <div className="flex flex-col items-center ">
-          <div className="flex flex-row font-bayon 2xl:text-[195px] xl:text-[160px] lg:text-[130px] md:text-[12.5vw] text-[12vw] text-white justify-between w-full">
+          <div className="flex flex-row font-bayon 2xl:text-[210px] xl:text-[175px] lg:text-[140px] md:text-[13.7vw] text-[13.2vw] text-white justify-between w-full">
             <motion.h1
               initial={{ opacity: 0, translateX: -500 }}
               animate={{ opacity: 1, translateX: 0 }}
