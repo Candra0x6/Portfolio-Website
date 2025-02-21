@@ -1,11 +1,13 @@
-import HomeIcon from "../../assets/icon/home_icon.svg";
-import AboutIcon from "../../assets/icon/about_icon.svg";
-import ExperienceIcon from "../../assets/icon/experience_icon.svg";
-import ProjectsIcon from "../../assets/icon/project_icon.svg";
-import HamburgerMenuIcon from "../../assets/icon/hamburger_icon.svg";
-import CloseIcon from "../../assets/icon/close_icon.svg";
-import { useEffect, useState } from "react";
+"use client";
+import HomeIcon from "../../../public/icon/home_icon.svg";
+import AboutIcon from "../../../public/icon/about_icon.svg";
+import ExperienceIcon from "../../../public/icon/experience_icon.svg";
+import ProjectsIcon from "../../../public/icon/project_icon.svg";
+import HamburgerMenuIcon from "../../../public/icon/hamburger_icon.svg";
+import CloseIcon from "../../../public/icon/close_icon.svg";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 type NAVBAR_SECTION_TYPE = {
   id: string;
   title: string;
@@ -48,6 +50,7 @@ export default function Navbar() {
     handleClick(window.location.hash);
   }, []);
 
+  console.log(HamburgerMenuIcon);
   return (
     <motion.header
       initial={{ opacity: 0, translateY: 500 }}
@@ -79,7 +82,10 @@ export default function Navbar() {
           }`}
           onClick={() => setIsClicked(!isClicked)}
         >
-          <img
+          <Image
+            width={100}
+            height={100}
+            alt="hamburger"
             src={isClicked ? CloseIcon : HamburgerMenuIcon}
             className={`transition-all duration-1000 ease-in-out ${
               isClicked ? "xl:w-14 md:w-8 w-8 rotate-0 lg:w-10" : "-rotate-180 "
@@ -111,7 +117,10 @@ export default function Navbar() {
                 href={items.link}
                 className={` flex flex-row gap-x-3 py-2 xl:px-10 lg:px-8 md:px-6 px-[18px] rounded-full items-center`}
               >
-                <img
+                <Image
+                  width={100}
+                  height={100}
+                  alt="icon"
                   src={items.icon}
                   className="lg:w-12 lg:h-12 md:w-8 md:h-8 w-5 h-5 pb-1 lg:flex md:flex xl:flex 2xl:flex hidden "
                 />

@@ -1,9 +1,18 @@
-/** @type {import('tailwindcss').Config} */
-const plugin = require("tailwindcss/plugin");
-export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
+
+const config: Config = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+      },
       fontFamily: {
         bayon: "Bayon",
         robotolight: "Roboto-Regular",
@@ -16,7 +25,7 @@ export default {
       addBase({
         "@font-face": {
           fontFamily: "Bayon",
-          src: "url(/src/assets/fonts/Bayon-Regular.ttf)",
+          src: "url(/fonts/Bayon-Regular.ttf)",
         },
       });
     }),
@@ -24,7 +33,7 @@ export default {
       addBase({
         "@font-face": {
           fontFamily: "Roboto-Regular",
-          src: "url(/src/assets/fonts/Roboto-Regular.ttf)",
+          src: "url(/fonts/Roboto-Regular.ttf)",
         },
       });
     }),
@@ -32,9 +41,10 @@ export default {
       addBase({
         "@font-face": {
           fontFamily: "Roboto-Bold",
-          src: "url(/src/assets/fonts/Roboto-Bold.ttf)",
+          src: "url(/fonts/Roboto-Bold.ttf)",
         },
       });
     }),
   ],
 };
+export default config;

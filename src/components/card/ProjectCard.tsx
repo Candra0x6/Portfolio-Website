@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
-import LinkIcon from "@mui/icons-material/Link";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import { AiOutlineGithub } from "react-icons/ai";
+import { FaLink } from "react-icons/fa6";
+
+import Image from "next/image";
+import Link from "next/link";
+
 interface props {
   title: string;
   subtitle: string;
@@ -55,26 +59,31 @@ function ProjectCard({
         </div>
         <div className="flex flex-row mt-5 space-x-5">
           {stack.map((val, i) => (
-            <img width="48" height="48" src={val} alt={`stack${i}`} />
+            <Image width="48" key={i} height="48" src={val} alt={`stack${i}`} />
           ))}
         </div>
         <div className="absolute bottom-0 lg:mb-10 mb-5 flex flex-row space-x-5">
-          <a
+          <Link
             href={githubLink}
-            className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center"
+            className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center text-black"
           >
-            <GitHubIcon className="md:p-0 p-3" sx={{ fontSize: 50 }} />
-          </a>
-          <a
+            <AiOutlineGithub className="md:p-0 p-3 text-5xl text-black" />
+          </Link>
+          <Link
             href={projectLink}
-            className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center"
+            className="bg-white rounded-full md:w-[60px] md:h-[60px] w-[10vw] h-[10vw] aspect-square flex flex-row items-center justify-center text-black"
           >
-            <LinkIcon sx={{ fontSize: 50 }} className="md:p-0 p-3" />
-          </a>
+            <FaLink className="md:p-0 p-3 text-4xl text-black" />
+          </Link>
         </div>
       </div>{" "}
-      <div className="lg:my-auto -mt-10 md:my-auto  ">
-        <img src={image} alt="project" className="w-full h-full" />
+      <div className="lg:my-auto -mt-10 md:my-auto">
+        <Image
+          src={image || ""}
+          alt="project"
+          className="w-full h-full"
+          layout="responsive"
+        />
       </div>
     </motion.div>
   );
