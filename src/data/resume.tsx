@@ -61,6 +61,18 @@ export const DATA = {
 
   work: [
     {
+      company: "Monklabs",
+      href: "https://monklabs.io/",
+      badges: [],
+      location: "Remote",
+      title: "Frontend Developer",
+      logoUrl: "/monklabs.jpg",
+      start: "January 2026",
+      end: "Present",
+      description:
+        "Build and ship frontend experiences for Web3 and Web2 products using modern React and TypeScript stacks. Own responsive UI, wallet-connected flows, and high-performance landing and app interfaces that connect users to decentralized and traditional platforms.",
+    },
+    {
       company: "Komdigi",
       href: "https://www.komdigi.go.id/",
       badges: [],
